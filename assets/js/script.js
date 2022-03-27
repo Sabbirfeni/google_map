@@ -1,7 +1,7 @@
 x = document.getElementById("location");
 function showPos() {
     if(navigator.geolocation) {
-        navigator.geolocation.watchPosition(showPosition);
+        navigator.geolocation.getCurrentPosition(showPosition);
     } else {
         x.innerHTML = "Not Supported";
     };
